@@ -1,4 +1,4 @@
-baseURL: https://blog.wangkele.life/
+baseURL: "/"
 languageCode: en-us
 title: Kele's Site 
 theme: ["PaperMod"]
