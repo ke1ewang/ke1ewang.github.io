@@ -1,0 +1,94 @@
+baseURL: "/"
+title: Kele's Site
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  author: Kele Wang
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+  profileMode:
+    enabled: true
+    title: Kele Wang
+    imageUrl: "/avatar.png"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ke1ewang"
+    - name: Instagram
+      url: "https://www.instagram.com/ke1e_wang/"
+    - name: telegram
+      url : "https://bit.ly/4aEGFLX"
+
+  editPost:
+    URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon.ico"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
