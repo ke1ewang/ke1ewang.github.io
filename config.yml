@@ -1,5 +1,6 @@
 baseURL: "/"
 title: Kele's Site
+copyright: "© 2025 [Kele's Site](https://keleo.org)"
 theme: PaperMod
 
 enableInlineShortcodes: true
